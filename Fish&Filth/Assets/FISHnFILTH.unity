@@ -591,6 +591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 307095905202545211}
   playerSpeed: 5
+  _spriteRenderer: {fileID: 662780448}
 --- !u!61 &662780452
 BoxCollider2D:
   m_ObjectHideFlags: 0

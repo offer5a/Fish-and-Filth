@@ -7,13 +7,15 @@ public class PlayerMovement : MonoBehaviour
 
     public Joystick movementJoystick;
     public float playerSpeed;
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rigidbody2d;
+    public SpriteRenderer _spriteRenderer;
+    private bool _isfacingleft;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -21,11 +23,26 @@ public class PlayerMovement : MonoBehaviour
     {
         if(movementJoystick.Direction.y != 0)
         {
-            rigidbody.velocity = new Vector2(movementJoystick.Direction.x * playerSpeed, movementJoystick.Direction.y * playerSpeed);
+            rigidbody2d.velocity = new Vector2(movementJoystick.Direction.x * playerSpeed, movementJoystick.Direction.y * playerSpeed);
         }
         else
         {
-            rigidbody.velocity = Vector2.zero;
+            rigidbody2d.velocity = Vector2.zero;
         }
+
+        if(_isfacingleft && rigidbody2d.velocity.x > 0)
+        {
+            FlipFacingDirection();
+        }
+        else if(!_isfacingleft && rigidbody2d.velocity.x < 0)
+        {
+            FlipFacingDirection();
+        }
+    }
+    private void FlipFacingDirection()
+    {
+        _isfacingleft = !_isfacingleft;
+
+        _spriteRenderer.flipX = _isfacingleft;
     }
 }
