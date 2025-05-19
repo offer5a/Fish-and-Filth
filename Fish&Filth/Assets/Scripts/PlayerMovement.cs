@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rigidbody2d;
     public SpriteRenderer _spriteRenderer;
     private bool _isfacingleft;
+    private bool _isfacingup;
 
 
     // Start is called before the first frame update
@@ -38,11 +39,32 @@ public class PlayerMovement : MonoBehaviour
         {
             FlipFacingDirection();
         }
+        // these are two different entries that refer to two different flipping directions.
+        if (_isfacingup && rigidbody2d.velocity.y > 0)
+        {
+            flipfacingdirection();
+        }
+        else if (!_isfacingup && rigidbody2d.velocity.y < 0)
+        {
+            flipfacingdirection();
+        }
+
     }
     private void FlipFacingDirection()
     {
         _isfacingleft = !_isfacingleft;
 
         _spriteRenderer.flipX = _isfacingleft;
+
+       
     }
+
+    private void flipfacingdirection()
+    {
+        _isfacingup = !_isfacingup;
+
+        _spriteRenderer.flipY = _isfacingup;
+
+    }
+
 }
