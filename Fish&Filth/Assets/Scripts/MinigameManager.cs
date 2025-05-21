@@ -70,32 +70,21 @@ public class MinigameManager : MonoBehaviour
 
     }
 
+
+    public Collider2D Green;
+    public Collider2D Player;
     public void GoalCheck()
     {
-        if (PlayerBar.position == Goal.position)
+        if (Green.bounds.Intersects(Player.bounds))
         {
             Debug.Log(Points++);
         }
-        else if (PlayerBar.position != Goal.position)
+        else
         {
             Debug.Log(Points--);
         }
     }
-
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Goal"))
-        {
-            Debug.Log(Points++);
-        }
         
-        
-    }
-    public void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Goal"))
-        {
-            Debug.Log(Points--);
-        }
-    }
+    
+    
 }
