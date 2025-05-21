@@ -8,10 +8,10 @@ public class GameManager : MonoBehaviour
 {
 
 
-    [SerializeField] private GameObject Capsule;
+    //[SerializeField] private GameObject Capsule;
     [SerializeField] private GameObject Minigame1;
 
-
+    public bool IsGameRunning;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
         if (collision.CompareTag("Ship"))
         {
             Minigame1.SetActive(true);
+            IsGameRunning = true;
         }
     }
 }
