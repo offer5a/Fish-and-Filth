@@ -32,5 +32,16 @@ public class GameManager : MonoBehaviour
             Minigame1.SetActive(true);
             IsGameRunning = true;
         }
+        
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ship"))
+        {
+            Minigame1.SetActive(false);
+            IsGameRunning = true;
+        }
+
+    }
+
 }

@@ -15,12 +15,14 @@ public class MinigameManager : MonoBehaviour
     [SerializeField] Transform BottomPivot;
     [SerializeField] Transform PlayerBar;
     [SerializeField] Transform Goal;
+    [SerializeField] GameObject Minigame;
     public Button Button;
 
     float BarPos;
     float BarDes;
 
-    int Points =0;
+    int WinPoints =0;
+    int LosePoints = 0;
 
     float BarTimer;
     [SerializeField] float TimeMult = 3f;
@@ -68,6 +70,20 @@ public class MinigameManager : MonoBehaviour
         float LerpValue = Mathf.PingPong(Time.time * Speed, 1f);
         PlayerBar.position = Vector3.Lerp(BottomPivot.position, TopPivot.position, LerpValue);
 
+
+        if (WinPoints >= 2)
+        {
+            //recives fish
+            Debug.Log("win");
+            Minigame.SetActive(false);
+        }
+        else if (LosePoints >= 2)
+        {
+            // dont recives fish
+            Debug.Log("lose");
+            Minigame.SetActive(false);
+        }
+
     }
 
 
@@ -77,11 +93,13 @@ public class MinigameManager : MonoBehaviour
     {
         if (Green.bounds.Intersects(Player.bounds))
         {
-            Debug.Log(Points++);
+            Debug.Log("Point Added");
+            WinPoints++;
         }
         else
         {
-            Debug.Log(Points--);
+            Debug.Log("Point Removed");
+            LosePoints++;
         }
     }
         

@@ -1410,6 +1410,7 @@ MonoBehaviour:
   BottomPivot: {fileID: 935693691}
   PlayerBar: {fileID: 1623528628}
   Goal: {fileID: 447781285}
+  Minigame: {fileID: 0}
   Button: {fileID: 0}
   TimeMult: 3
   Speed: 5.4
@@ -1716,9 +1717,10 @@ MonoBehaviour:
   BottomPivot: {fileID: 935693691}
   PlayerBar: {fileID: 1623528628}
   Goal: {fileID: 447781285}
+  Minigame: {fileID: 1471021612}
   Button: {fileID: 1433605447}
   TimeMult: 3
-  Speed: 0.5
+  Speed: 1
   Green: {fileID: 447781288}
   Player: {fileID: 1623528631}
 --- !u!1 &1636294665
