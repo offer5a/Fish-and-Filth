@@ -16,6 +16,9 @@ public class MinigameManager : MonoBehaviour
     [SerializeField] Transform PlayerBar;
     [SerializeField] Transform Goal;
     [SerializeField] GameObject Minigame;
+
+    public bool IsGameRunning;
+
     public Button Button;
 
     float BarPos;
@@ -46,7 +49,7 @@ public class MinigameManager : MonoBehaviour
         {
             //BarTimer = UnityEngine.Random.value * TimeMult;
 
-           // BarDes = UnityEngine.Random.value;
+            // BarDes = UnityEngine.Random.value;
         }
 
         //BarPos = Mathf.SmoothDamp(BarPos, BarDes, ref Speed, smoothMotion);
@@ -71,20 +74,35 @@ public class MinigameManager : MonoBehaviour
         PlayerBar.position = Vector3.Lerp(BottomPivot.position, TopPivot.position, LerpValue);
 
 
+
         if (WinPoints >= 2)
         {
             //recives fish
             Debug.Log("win");
             Minigame.SetActive(false);
+            IsGameRunning = false;
         }
         else if (LosePoints >= 2)
         {
             // dont recives fish
             Debug.Log("lose");
             Minigame.SetActive(false);
+            IsGameRunning = false;
+        }
+        else
+        {
+            IsGameRunning = true;
         }
 
+        if (IsGameRunning == false)
+        {
+            WinPoints = 0;
+            LosePoints = 0;
+        }
+        
     }
+
+    
 
 
     public Collider2D Green;
@@ -105,4 +123,10 @@ public class MinigameManager : MonoBehaviour
         
     
     
+}
+
+public class WinLoseState : MinigameManager
+{
+   
+
 }

@@ -1040,6 +1040,118 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10, y: 10}
   m_EdgeRadius: 0
+--- !u!1 &777865671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777865677}
+  - component: {fileID: 777865676}
+  - component: {fileID: 777865675}
+  - component: {fileID: 777865674}
+  - component: {fileID: 777865673}
+  - component: {fileID: 777865672}
+  m_Layer: 0
+  m_Name: ScriptHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &777865672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777865671}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b8bbc5863f18944b77fa6429df391d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Minigame1: {fileID: 0}
+  IsGameRunning: 0
+--- !u!114 &777865673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777865671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad2ce016b583064abf911e1306aad46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &777865674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777865671}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9455a747cc6f71948a3062d1c84392a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TopPivot: {fileID: 0}
+  BottomPivot: {fileID: 0}
+  PlayerBar: {fileID: 0}
+  Goal: {fileID: 0}
+  Minigame: {fileID: 0}
+  IsGameRunning: 0
+  Button: {fileID: 0}
+  TimeMult: 3
+  Speed: 0
+  Green: {fileID: 0}
+  Player: {fileID: 0}
+--- !u!114 &777865675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777865671}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98997fbc36375df4a8eeabdd449978bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementJoystick: {fileID: 0}
+  playerSpeed: 0
+  _spriteRenderer: {fileID: 0}
+--- !u!114 &777865676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777865671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adab06db8dbd6a4f9d81ee68c06ae14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &777865677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777865671}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 554.749, y: 370.71237, z: -3.2595894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &935693690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1523,7 @@ MonoBehaviour:
   PlayerBar: {fileID: 1623528628}
   Goal: {fileID: 447781285}
   Minigame: {fileID: 0}
+  IsGameRunning: 0
   Button: {fileID: 0}
   TimeMult: 3
   Speed: 5.4
@@ -1718,6 +1831,7 @@ MonoBehaviour:
   PlayerBar: {fileID: 1623528628}
   Goal: {fileID: 447781285}
   Minigame: {fileID: 1471021612}
+  IsGameRunning: 0
   Button: {fileID: 1433605447}
   TimeMult: 3
   Speed: 1
@@ -2319,3 +2433,4 @@ SceneRoots:
   - {fileID: 1636294667}
   - {fileID: 327480300}
   - {fileID: 1471021617}
+  - {fileID: 777865677}

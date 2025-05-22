@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         if (collision.CompareTag("Ship"))
         {
             Minigame1.SetActive(false);
-            IsGameRunning = true;
+            IsGameRunning = false;
         }
 
     }
