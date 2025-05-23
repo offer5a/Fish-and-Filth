@@ -7,6 +7,8 @@ using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System.Threading.Tasks;
+
 
 public class MinigameManager : MonoBehaviour
 {
@@ -37,7 +39,7 @@ public class MinigameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("GoalCheck", 2f);
     }
 
     // Update is called once per frame
@@ -107,17 +109,32 @@ public class MinigameManager : MonoBehaviour
 
     public Collider2D Green;
     public Collider2D Player;
-    public void GoalCheck()
+    public GameObject failball;
+    public GameObject successball;
+
+
+    public async void GoalCheck()
     {
         if (Green.bounds.Intersects(Player.bounds))
         {
+            
             Debug.Log("Point Added");
             WinPoints++;
+            successball.SetActive(true);
+            await Task.Delay(1200);
+            successball.SetActive(false);
+
+
+
         }
         else
         {
             Debug.Log("Point Removed");
             LosePoints++;
+            failball.SetActive(true);
+            await Task.Delay(1200);
+            failball.SetActive(false);
+
         }
     }
         
