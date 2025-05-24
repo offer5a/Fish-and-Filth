@@ -1,9 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 public class InhertitanceTest : MonoBehaviour 
 {
+    public string simplefish;
+    public string Simplefish()
+    {
+        return simplefish;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +41,9 @@ public class InhertitanceTest : MonoBehaviour
         {
             name = "cod";
             type = "Normal Fish";
-
+            
         }
-
     }
+    
 
 }

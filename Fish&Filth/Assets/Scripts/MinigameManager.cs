@@ -18,6 +18,9 @@ public class MinigameManager : MonoBehaviour
     [SerializeField] Transform PlayerBar;
     [SerializeField] Transform Goal;
     [SerializeField] GameObject Minigame;
+    [SerializeField] private InhertitanceTest fish;
+
+    public string Simplefish;
 
     public bool IsGameRunning;
 
@@ -26,7 +29,7 @@ public class MinigameManager : MonoBehaviour
     float BarPos;
     float BarDes;
 
-    int WinPoints =0;
+    int WinPoints = 0;
     int LosePoints = 0;
 
     float BarTimer;
@@ -82,7 +85,13 @@ public class MinigameManager : MonoBehaviour
             //recives fish
             Debug.Log("win");
             Minigame.SetActive(false);
+
+
+            GiveRewardCod();
+
             IsGameRunning = false;
+
+            
         }
         else if (LosePoints >= 2)
         {
@@ -101,11 +110,11 @@ public class MinigameManager : MonoBehaviour
             WinPoints = 0;
             LosePoints = 0;
         }
-        
+
     }
 
     
-
+    
 
     public Collider2D Green;
     public Collider2D Player;
@@ -117,7 +126,7 @@ public class MinigameManager : MonoBehaviour
     {
         if (Green.bounds.Intersects(Player.bounds))
         {
-            
+
             Debug.Log("Point Added");
             WinPoints++;
             successball.SetActive(true);
@@ -137,13 +146,25 @@ public class MinigameManager : MonoBehaviour
 
         }
     }
-        
-    
-    
+
+
+    void GiveRewardCod()
+    {
+        Item reward = new Item("cod");
+        bool added = Inventory.Instance.AddItem(reward);
+
+
+        if (added)
+        {
+            Debug.Log("Minigame completed! Reward given: " + reward.itemName);
+        }
+    }
+    //void GiveRewardRarerFish()
+    //{
+    //    Item reward = new Item("cod");
+    //    bool added = Inventory.Instance.AddItem(reward);
+    //}
+
 }
 
-public class WinLoseState : MinigameManager
-{
-   
 
-}
