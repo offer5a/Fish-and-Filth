@@ -14,6 +14,7 @@ public class DockDetect : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Dock"))
+
         {
             if (undockButton != null)
                 undockButton.SetActive(true);
@@ -46,6 +47,17 @@ public class DockDetect : MonoBehaviour
             if (move != null)
             {
                 move.enabled = false;
+            }
+
+            undockButton.SetActive(false);
+
+        }
+        else if(playerObject.GetComponent<PlayerUndocker>().isOnLand == false)
+        {
+            var move = GetComponent<PlayerMovement>();
+            if (move != null)
+            {
+                move.enabled = true;
             }
         }
 
