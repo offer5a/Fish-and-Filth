@@ -150,14 +150,17 @@ public class MinigameManager : MonoBehaviour
 
     void GiveRewardCod()
     {
-        Item reward = new Item("cod");
-        bool added = Inventory.Instance.AddItem(reward);
+        
+            Item reward = new Item("cod");
+            bool added = Inventory.Instance.AddItem(reward);
 
 
-        if (added)
-        {
-            Debug.Log("Minigame completed! Reward given: " + reward.itemName);
-        }
+            if (added)
+            {
+                Debug.Log("Minigame completed! Reward given: " + reward.itemName);
+            }
+        
+        
     }
     //void GiveRewardRarerFish()
     //{

@@ -9,6 +9,8 @@ TagManager:
   - TopPivot
   - BottomPivot
   - Goal
+  - CodSpot
+  - Dock
   layers:
   - Default
   - TransparentFX

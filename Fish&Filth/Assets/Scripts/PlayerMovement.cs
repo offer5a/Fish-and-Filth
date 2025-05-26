@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private bool _isfacingleft;
     private bool _isfacingup;
 
+    private bool _isonwater;
+
 
     // Start is called before the first frame update
     void Start()
