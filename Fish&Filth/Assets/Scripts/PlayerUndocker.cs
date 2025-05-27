@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR;
 using static UnityEngine.UI.Image;
 
 public class PlayerUndocker : MonoBehaviour
@@ -22,6 +23,19 @@ public class PlayerUndocker : MonoBehaviour
         return Clone;
     }
 
+    public void Awake()
+    {
+        
+        //if(Time.frameCount <= 1)
+        //{
+        //    Clone = Instantiate(Playerfab, new Vector3(0, 12, -4), Quaternion.identity);
+        //}
+        
+        
+
+
+
+    }
     public void SetNearDock(bool value)
     {
         nearDock = value;
@@ -64,7 +78,7 @@ public class PlayerUndocker : MonoBehaviour
     {
 
         virtualCamera.Follow = Ship.transform;
-        transform.localPosition = Vector3.zero;
+        //transform.localPosition = Vector3.zero;
 
         Destroy(Clone);
 

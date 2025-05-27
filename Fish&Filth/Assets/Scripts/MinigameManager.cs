@@ -87,7 +87,7 @@ public class MinigameManager : MonoBehaviour
             Minigame.SetActive(false);
 
 
-            GiveRewardCod();
+            GiveReward();
 
             IsGameRunning = false;
 
@@ -148,10 +148,10 @@ public class MinigameManager : MonoBehaviour
     }
 
 
-    void GiveRewardCod()
+    void GiveReward()
     {
-        
-            Item reward = new Item("cod");
+
+        Item reward = new Item("cod");
             bool added = Inventory.Instance.AddItem(reward);
 
 

@@ -1,0 +1,49 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FishSpotDetactRare : MonoBehaviour
+{
+    // Start is called before the first frame update
+    //[SerializeField] private GameObject Capsule;
+    [SerializeField] private GameObject Minigame1;
+    
+    public bool IsGameRunning;
+
+  
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Inventory inventory = Inventory.Instance;
+        if (collision.CompareTag("Ship"))
+        {
+            bool hasRod = false;
+            foreach (Item item in inventory.items)
+            {
+                if (item.itemName == "Rod")
+                {
+                    hasRod = true;
+                    break;
+                }
+            }
+            if (hasRod)
+            {
+                Minigame1.SetActive(true);
+                IsGameRunning = true;
+            }
+            else 
+            {
+                Debug.Log("You Dont Have Rod!!");
+                    }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ship"))
+        {
+            Minigame1.SetActive(false);
+            IsGameRunning = false;
+        }
+
+    }
+}
