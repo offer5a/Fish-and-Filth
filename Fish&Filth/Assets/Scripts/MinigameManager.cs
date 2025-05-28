@@ -18,9 +18,12 @@ public class MinigameManager : MonoBehaviour
     [SerializeField] Transform PlayerBar;
     [SerializeField] Transform Goal;
     [SerializeField] GameObject Minigame;
+    [SerializeField] GameObject RareSpot;
     [SerializeField] private InhertitanceTest fish;
 
     public string Simplefish;
+
+    
 
     public bool IsGameRunning;
 
@@ -48,6 +51,20 @@ public class MinigameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Inventory inventory = Inventory.Instance;
+        bool hasRod = false;
+        foreach (Item item in inventory.items)
+        {
+            if (item.itemName == "Rod")
+            {
+                hasRod = true;
+                break;
+            }
+        }
+
+
+
+
         BarPos += Time.deltaTime;
         BarTimer -= Time.deltaTime;
         if (BarTimer > 0)
@@ -78,7 +95,7 @@ public class MinigameManager : MonoBehaviour
         float LerpValue = Mathf.PingPong(Time.time * Speed, 1f);
         PlayerBar.position = Vector3.Lerp(BottomPivot.position, TopPivot.position, LerpValue);
 
-
+        
 
         if (WinPoints >= 2)
         {
@@ -86,8 +103,15 @@ public class MinigameManager : MonoBehaviour
             Debug.Log("win");
             Minigame.SetActive(false);
 
-
-            GiveReward();
+            if(hasRod == false)
+            {
+                GiveReward();
+            }
+            else if(hasRod == true && RareSpot.GetComponent<FishSpotDetactRare>().IsRareSpot == true)
+            {
+                GiveRewardRarerFish();
+            }
+            
 
             IsGameRunning = false;
 
@@ -162,11 +186,15 @@ public class MinigameManager : MonoBehaviour
         
         
     }
-    //void GiveRewardRarerFish()
-    //{
-    //    Item reward = new Item("cod");
-    //    bool added = Inventory.Instance.AddItem(reward);
-    //}
+    void GiveRewardRarerFish()
+    {
+        Item reward = new Item("Open Fish");
+        bool added = Inventory.Instance.AddItem(reward);
+        if (added)
+        {
+            Debug.Log("Minigame completed! Reward given: " + reward.itemName);
+        }
+    }
 
 }
 

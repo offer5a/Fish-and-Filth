@@ -9,7 +9,7 @@ public class FishSpotDetactRare : MonoBehaviour
     [SerializeField] private GameObject Minigame1;
     
     public bool IsGameRunning;
-
+    public bool IsRareSpot;
   
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -30,6 +30,7 @@ public class FishSpotDetactRare : MonoBehaviour
             {
                 Minigame1.SetActive(true);
                 IsGameRunning = true;
+                IsRareSpot = true;
             }
             else 
             {
@@ -43,6 +44,7 @@ public class FishSpotDetactRare : MonoBehaviour
         {
             Minigame1.SetActive(false);
             IsGameRunning = false;
+            IsRareSpot=false;
         }
 
     }

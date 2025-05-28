@@ -3742,6 +3742,7 @@ MonoBehaviour:
   PlayerBar: {fileID: 1623528628}
   Goal: {fileID: 447781285}
   Minigame: {fileID: 0}
+  RareSpot: {fileID: 1724581234}
   fish: {fileID: 777865678}
   Simplefish: 
   IsGameRunning: 0
@@ -3878,7 +3879,8 @@ MonoBehaviour:
   BottomPivot: {fileID: 1031199453}
   PlayerBar: {fileID: 1881076196}
   Goal: {fileID: 987845722}
-  Minigame: {fileID: 0}
+  Minigame: {fileID: 1525809515}
+  RareSpot: {fileID: 1724581234}
   fish: {fileID: 777865678}
   Simplefish: 
   IsGameRunning: 0
@@ -4553,6 +4555,7 @@ MonoBehaviour:
   PlayerBar: {fileID: 1623528628}
   Goal: {fileID: 447781285}
   Minigame: {fileID: 1471021612}
+  RareSpot: {fileID: 1724581234}
   fish: {fileID: 777865678}
   Simplefish: 
   IsGameRunning: 0
@@ -4813,6 +4816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Minigame1: {fileID: 1525809515}
   IsGameRunning: 0
+  IsRareSpot: 0
 --- !u!1 &1784858940
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,6 +5224,7 @@ MonoBehaviour:
   PlayerBar: {fileID: 1881076196}
   Goal: {fileID: 987845722}
   Minigame: {fileID: 1525809515}
+  RareSpot: {fileID: 1724581234}
   fish: {fileID: 777865678}
   Simplefish: 
   IsGameRunning: 0
