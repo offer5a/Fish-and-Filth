@@ -103,7 +103,7 @@ public class MinigameManager : MonoBehaviour
             Debug.Log("win");
             Minigame.SetActive(false);
 
-            if(hasRod == false)
+            if(RareSpot.GetComponent<FishSpotDetactRare>().IsRareSpot == false)
             {
                 GiveReward();
             }
