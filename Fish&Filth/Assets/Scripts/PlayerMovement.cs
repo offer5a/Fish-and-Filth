@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer _spriteRenderer;
     private bool _isfacingleft;
     private bool _isfacingup;
+    [SerializeField] private Animator _animator;
 
     private bool _isonwater;
 
@@ -36,20 +37,40 @@ public class PlayerMovement : MonoBehaviour
         if(_isfacingleft && rigidbody2d.velocity.x > 0)
         {
             FlipFacingDirection();
+            //_animator.SetBool("ismovingside", true);
         }
         else if(!_isfacingleft && rigidbody2d.velocity.x < 0)
         {
             FlipFacingDirection();
+           // _animator.SetBool("ismovingside", true);
         }
         // these are two different entries that refer to two different flipping directions.
         if (_isfacingup && rigidbody2d.velocity.y > 0)
         {
             flipfacingdirection();
+            _animator.SetBool("ismovingbackward", true);
+            _animator.SetBool("ismovingforward", false);
+
         }
         else if (!_isfacingup && rigidbody2d.velocity.y < 0)
         {
-            flipfacingdirection();
+            //flipfacingdirection();
+            _animator.SetBool("ismovingforward", true);
+            _animator.SetBool("ismovingbackward", false);
+
         }
+        if (!_isfacingup && rigidbody2d.velocity.y > 0)
+        {
+            _animator.SetBool("ismovingforward", false);
+            _animator.SetBool("ismovingbackward", true);
+
+        }
+        if(!_isfacingup && rigidbody2d.velocity.y == 0)
+        {
+            _animator.Play("idle");
+        }
+
+
 
     }
     private void FlipFacingDirection()
