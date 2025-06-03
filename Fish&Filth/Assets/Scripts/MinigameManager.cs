@@ -144,6 +144,10 @@ public class MinigameManager : MonoBehaviour
     public Collider2D Player;
     public GameObject failball;
     public GameObject successball;
+    public GameObject codtext;
+    public GameObject opentext;
+
+        
 
 
     public async void GoalCheck()
@@ -172,7 +176,7 @@ public class MinigameManager : MonoBehaviour
     }
 
 
-    void GiveReward()
+    async void GiveReward()
     {
 
         Item reward = new Item("cod");
@@ -182,17 +186,24 @@ public class MinigameManager : MonoBehaviour
             if (added)
             {
                 Debug.Log("Minigame completed! Reward given: " + reward.itemName);
+            codtext.SetActive(true);
+            await Task.Delay(3000);
+            codtext.SetActive(false);
+            
             }
         
         
     }
-    void GiveRewardRarerFish()
+    async void GiveRewardRarerFish()
     {
         Item reward = new Item("Open Fish");
         bool added = Inventory.Instance.AddItem(reward);
         if (added)
         {
             Debug.Log("Minigame completed! Reward given: " + reward.itemName);
+            opentext.SetActive(true);
+            await Task.Delay(3000);
+            opentext.SetActive(false);
         }
     }
 
