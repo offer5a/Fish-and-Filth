@@ -7,6 +7,7 @@ public class Docking : MonoBehaviour
     public bool isDocked = true;
     public bool nearDock = false;
     private Transform Ship;
+    [SerializeField] private GameObject _shipsprits;
 
     void Start()
     {
@@ -19,11 +20,13 @@ public class Docking : MonoBehaviour
         if (nearDock && isDocked && Input.GetKeyDown(KeyCode.E))
         {
             Undock();
+            _shipsprits.SetActive(false);            
         }
 
         if (!isDocked && nearDock && Input.GetKeyDown(KeyCode.E))
         {
             Dock();
+            _shipsprits.SetActive(true);
         }
 
         // Optional: return to ship (you can reverse the logic later)
