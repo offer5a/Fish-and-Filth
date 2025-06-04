@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: b82a5770d43150a43ac59d349bf3250f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Untitled_Artwork (4)_6
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1164
+        width: 600
+        height: 767
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8641a3b94c8454eb68889ec1f2c8db
+      internalID: -284533915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (4)_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 772
+        width: 390
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b2709abcd69244f89c0760463fe7c8
+      internalID: -1719218180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork (4)_25
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 70
+        width: 744
+        height: 889
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965732e0edc762146b9d335113b767e1
+      internalID: -1107370796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Untitled_Artwork (4)_0: -1374476244
+      Untitled_Artwork (4)_1: 1766432905
+      Untitled_Artwork (4)_10: -1623530607
+      Untitled_Artwork (4)_11: 2145137011
+      Untitled_Artwork (4)_12: -953354562
+      Untitled_Artwork (4)_13: 1764695146
+      Untitled_Artwork (4)_14: -1421122810
+      Untitled_Artwork (4)_15: -1852029033
+      Untitled_Artwork (4)_16: 2038598289
+      Untitled_Artwork (4)_17: -343841825
+      Untitled_Artwork (4)_18: 548574658
+      Untitled_Artwork (4)_19: 1788975019
+      Untitled_Artwork (4)_2: 955523642
+      Untitled_Artwork (4)_20: 767799638
+      Untitled_Artwork (4)_21: 1417569666
+      Untitled_Artwork (4)_22: 122861503
+      Untitled_Artwork (4)_23: 1910134122
+      Untitled_Artwork (4)_24: -1103127861
+      Untitled_Artwork (4)_25: -1107370796
+      Untitled_Artwork (4)_26: 956416030
+      Untitled_Artwork (4)_27: -837794529
+      Untitled_Artwork (4)_28: -1518245596
+      Untitled_Artwork (4)_29: -860487588
+      Untitled_Artwork (4)_3: -1458219453
+      Untitled_Artwork (4)_30: 910892882
+      Untitled_Artwork (4)_31: 235916576
+      Untitled_Artwork (4)_32: -1383398018
+      Untitled_Artwork (4)_33: 517728662
+      Untitled_Artwork (4)_34: 599530419
+      Untitled_Artwork (4)_35: 1199808320
+      Untitled_Artwork (4)_36: 718688067
+      Untitled_Artwork (4)_37: -752095473
+      Untitled_Artwork (4)_38: 69692329
+      Untitled_Artwork (4)_4: 2004012011
+      Untitled_Artwork (4)_5: 81086377
+      Untitled_Artwork (4)_6: -284533915
+      Untitled_Artwork (4)_7: 1554983970
+      Untitled_Artwork (4)_8: -1719218180
+      Untitled_Artwork (4)_9: -1582513793
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
