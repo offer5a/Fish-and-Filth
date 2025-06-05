@@ -15,4 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FISHnFILTH.unity
     guid: 94a1b26a1a1147b49ba448f8f8d32e3b
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 32b0b7b2025b9cf438436b3c5dfadcc1, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 81562536bdfc7a1459554273c888f35f, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 47750dc3abc14f148b77b32f88327f22, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: fe27bbbe9faf8d64987c2d5d02533908, type: 2}
