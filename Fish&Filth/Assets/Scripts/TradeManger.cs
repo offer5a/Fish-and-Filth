@@ -65,7 +65,7 @@ public class TradeManger : MonoBehaviour
             inventory.AddItem(trade.rewardItem);
             //Debug.Log($"Trade successful! Gave {trade.requiredAmount} {trade.requiredItemName}(s) for a {trade.rewardItem.itemName}.");
             yestrade.SetActive(true);
-            await Task.Delay(3000);
+            await Task.Delay(5000);
             yestrade.SetActive(false);
 
         }
