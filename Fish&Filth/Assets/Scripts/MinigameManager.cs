@@ -15,7 +15,8 @@ public class MinigameManager : MonoBehaviour
 
     [SerializeField] Transform TopPivot;
     [SerializeField] Transform BottomPivot;
-    [SerializeField] Transform PlayerBar;
+    [SerializeField] Transform Player;
+    [SerializeField] Transform Player2;
     [SerializeField] Transform Goal;
     [SerializeField] GameObject Minigame;
     [SerializeField] GameObject RareSpot;
@@ -40,6 +41,7 @@ public class MinigameManager : MonoBehaviour
 
     float BarSpeed;
     [SerializeField] float Speed;
+    [SerializeField] float Speed2;
 
     float smoothMotion = 1f;
     // Start is called before the first frame update
@@ -49,7 +51,7 @@ public class MinigameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    async void Update()
     {
         Inventory inventory = Inventory.Instance;
         bool hasRod = false;
@@ -93,9 +95,14 @@ public class MinigameManager : MonoBehaviour
         //PlayerBar.position = Vector3.MoveTowards(BottomPivot.position, TopPivot.position, BarPos);
 
         float LerpValue = Mathf.PingPong(Time.time * Speed, 1f);
-        PlayerBar.position = Vector3.Lerp(BottomPivot.position, TopPivot.position, LerpValue);
 
-        
+        float LerpValue2 = Mathf.PingPong(Time.time * Speed2, 1f);
+
+        Player.position = Vector3.Lerp(BottomPivot.position, TopPivot.position, LerpValue);
+
+        Player2.position = Vector3.Lerp(TopPivot.position, BottomPivot.position, LerpValue2);
+
+
 
         if (WinPoints >= 2)
         {
@@ -123,6 +130,11 @@ public class MinigameManager : MonoBehaviour
             Debug.Log("lose");
             Minigame.SetActive(false);
             IsGameRunning = false;
+
+            failText.SetActive(true);
+            await Task.Delay(3000);
+            failText.SetActive(false);
+
         }
         else
         {
@@ -141,18 +153,21 @@ public class MinigameManager : MonoBehaviour
     
 
     public Collider2D Green;
-    public Collider2D Player;
+    public Collider2D Green2;
+    public Collider2D PlayerBar1;
+    public Collider2D PlayerBar2;
     public GameObject failball;
     public GameObject successball;
     public GameObject codtext;
     public GameObject opentext;
+    public GameObject failText;
 
         
 
 
     public async void GoalCheck()
     {
-        if (Green.bounds.Intersects(Player.bounds))
+        if (Green.bounds.Intersects(PlayerBar1.bounds) && Green2.bounds.Intersects(PlayerBar2.bounds) || Green2.bounds.Intersects(PlayerBar1.bounds) && Green.bounds.Intersects(PlayerBar2.bounds))
         {
 
             Debug.Log("Point Added");
@@ -191,6 +206,8 @@ public class MinigameManager : MonoBehaviour
             codtext.SetActive(false);
             
             }
+            
+        
         
         
     }
