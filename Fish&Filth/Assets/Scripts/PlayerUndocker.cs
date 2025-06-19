@@ -16,6 +16,7 @@ public class PlayerUndocker : MonoBehaviour
     //public CamSwitch camSwitcher;
     public CinemachineVirtualCamera virtualCamera;
     public GameObject Ship;
+    public Rigidbody2D ShipMove;
 
     public GameObject Cloner()
     {
@@ -52,14 +53,14 @@ public class PlayerUndocker : MonoBehaviour
         // Detach from ship
         transform.SetParent(null);
         //transform.position += new Vector3(1f, 0, 0);
-
+        ShipMove.constraints = RigidbodyConstraints2D.FreezeAll;
         // Enable movement script
         var move = GetComponent<PlayerMovement>();
         if (move != null)
         {
             move.enabled = true;
         }
-
+        
         //GameObject clone = Instantiate(Playerfab);
         Clone = Instantiate(Playerfab, new Vector3(0, 12, -4), Quaternion.identity);
 
@@ -84,6 +85,7 @@ public class PlayerUndocker : MonoBehaviour
 
         isOnLand = false;
         
+        ShipMove.constraints = RigidbodyConstraints2D.None;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
