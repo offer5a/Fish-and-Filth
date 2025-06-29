@@ -16,7 +16,6 @@ public class MinigameManager : MonoBehaviour
     [SerializeField] Transform TopPivot;
     [SerializeField] Transform BottomPivot;
     [SerializeField] Transform Player;
-    [SerializeField] Transform Player2;
     [SerializeField] Transform Goal;
     [SerializeField] GameObject Minigame;
     [SerializeField] GameObject RareSpot;
@@ -41,7 +40,7 @@ public class MinigameManager : MonoBehaviour
 
     float BarSpeed;
     [SerializeField] float Speed;
-    [SerializeField] float Speed2;
+    
 
     float smoothMotion = 1f;
     // Start is called before the first frame update
@@ -96,11 +95,11 @@ public class MinigameManager : MonoBehaviour
 
         float LerpValue = Mathf.PingPong(Time.time * Speed, 1f);
 
-        float LerpValue2 = Mathf.PingPong(Time.time * Speed2, 1f);
+        
 
         Player.position = Vector3.Lerp(BottomPivot.position, TopPivot.position, LerpValue);
 
-        Player2.position = Vector3.Lerp(TopPivot.position, BottomPivot.position, LerpValue2);
+        
 
 
 
@@ -153,9 +152,9 @@ public class MinigameManager : MonoBehaviour
     
 
     public Collider2D Green;
-    public Collider2D Green2;
+    
     public Collider2D PlayerBar1;
-    public Collider2D PlayerBar2;
+    
     public GameObject failball;
     public GameObject successball;
     public GameObject codtext;
@@ -165,9 +164,9 @@ public class MinigameManager : MonoBehaviour
         
 
 
-    public async void GoalCheck()
+    public async void miniGame()
     {
-        if (Green.bounds.Intersects(PlayerBar1.bounds) && Green2.bounds.Intersects(PlayerBar2.bounds) || Green2.bounds.Intersects(PlayerBar1.bounds) && Green.bounds.Intersects(PlayerBar2.bounds))
+        if (Green.bounds.Intersects(PlayerBar1.bounds))
         {
 
             Debug.Log("Point Added");
