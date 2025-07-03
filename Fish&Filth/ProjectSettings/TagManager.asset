@@ -11,6 +11,8 @@ TagManager:
   - Goal
   - CodSpot
   - Dock
+  - Dock1
+  - Dock2
   layers:
   - Default
   - TransparentFX

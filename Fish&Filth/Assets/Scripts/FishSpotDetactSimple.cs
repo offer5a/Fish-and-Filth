@@ -13,8 +13,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject Minigame2;
 
     public bool IsGameRunning;
-
     
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +29,23 @@ public class GameManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+        int randomChoice = UnityEngine.Random.Range(0, 2);
         if (collision.CompareTag("Ship"))
         {
-            Minigame2.SetActive(true);
-            IsGameRunning = true;
+
+            if (randomChoice == 0)
+            {
+                Minigame1.SetActive(true);
+                IsGameRunning = true;
+            }
+            else if (randomChoice == 1) 
+            {
+                Minigame2.SetActive(true);
+                IsGameRunning = true;
+
+            }
+            
         }
         
     }
@@ -40,6 +53,7 @@ public class GameManager : MonoBehaviour
     {
         if (collision.CompareTag("Ship"))
         {
+            Minigame1.SetActive(false);
             Minigame2.SetActive(false);
             IsGameRunning = false;
         }

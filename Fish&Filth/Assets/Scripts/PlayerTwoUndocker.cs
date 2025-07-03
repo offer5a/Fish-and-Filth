@@ -7,12 +7,12 @@ using UnityEngine;
 using UnityEngine.XR;
 using static UnityEngine.UI.Image;
 
-public class PlayerUndocker : MonoBehaviour
+public class PlayerTwoUndocker : MonoBehaviour
 {
     public GameObject BoardButton;
     private bool nearDock = false;
     public bool isOnLand;
-    public GameObject Clone;
+    public GameObject Clone1;
     public GameObject Playerfab;
     //public CamSwitch camSwitcher;
     public CinemachineVirtualCamera virtualCamera;
@@ -26,8 +26,8 @@ public class PlayerUndocker : MonoBehaviour
     {
         
 
-        Clone = Instantiate(Playerfab, DockLok.position, Quaternion.identity);
-        return Clone;
+        Clone1 = Instantiate(Playerfab, DockLok.position, Quaternion.identity);
+        return Clone1;
     }
 
     public void Awake()
@@ -74,7 +74,7 @@ public class PlayerUndocker : MonoBehaviour
 
         
         //GameObject clone = Instantiate(Playerfab);
-        Clone = Instantiate(Playerfab, DockLok.position, Quaternion.identity);
+        Clone1 = Instantiate(Playerfab, DockLok.position, Quaternion.identity);
 
 
         //GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
@@ -84,16 +84,16 @@ public class PlayerUndocker : MonoBehaviour
         //Debug.Log("Player undocked and can move.");
 
         isOnLand = true;
-        virtualCamera.Follow = Clone.transform;
+        virtualCamera.Follow = Clone1.transform;
     }
 
     public void Dock()
     {
 
-        if (Clone != null)
+        if (Clone1 != null)
         {
-            Destroy(Clone);
-            Clone = null;
+            Destroy(Clone1);
+            Clone1 = null;
         }
 
         virtualCamera.Follow = Ship.transform;
@@ -113,8 +113,8 @@ public class PlayerUndocker : MonoBehaviour
 
 
 
-            if (Clone != null)
-                Clone.GetComponent<PlayerUndocker>().SetNearDock(true);
+            if (Clone1 != null)
+                Clone1.GetComponent<PlayerUndocker>().SetNearDock(true);
         }
     }
 
@@ -125,8 +125,8 @@ public class PlayerUndocker : MonoBehaviour
             if (BoardButton != null)
                 BoardButton.SetActive(false);
 
-            if (Clone != null)
-                Clone.GetComponent<PlayerUndocker>().SetNearDock(false);
+            if (Clone1 != null)
+                Clone1.GetComponent<PlayerUndocker>().SetNearDock(false);
 
 
         }
