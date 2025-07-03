@@ -18,7 +18,7 @@ public class PlayerUndocker : MonoBehaviour
     public CinemachineVirtualCamera virtualCamera;
     public GameObject Ship;
 
-    public Transform DockLok;
+    //public Transform DockLok;
     //public Transform  NewDockLok;
 
 
@@ -26,7 +26,7 @@ public class PlayerUndocker : MonoBehaviour
     {
         
 
-        Clone = Instantiate(Playerfab, DockLok.position, Quaternion.identity);
+        Clone = Instantiate(Playerfab, new Vector3(0, 12, 1), Quaternion.identity);
         return Clone;
     }
 
@@ -74,7 +74,7 @@ public class PlayerUndocker : MonoBehaviour
 
         
         //GameObject clone = Instantiate(Playerfab);
-        Clone = Instantiate(Playerfab, DockLok.position, Quaternion.identity);
+        Clone = Instantiate(Playerfab, new Vector3(0, 12, 1), Quaternion.identity);
 
 
         //GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;

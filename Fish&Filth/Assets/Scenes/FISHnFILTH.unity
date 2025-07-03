@@ -429,7 +429,7 @@ Transform:
   m_GameObject: {fileID: 51167372}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 99.2, y: 65.9, z: -10}
+  m_LocalPosition: {x: -57.2, y: -54.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -716,7 +716,6 @@ MonoBehaviour:
   Playerfab: {fileID: 1398389681}
   virtualCamera: {fileID: 1377255538}
   Ship: {fileID: 662780447}
-  DockLok: {fileID: 1918370424}
 --- !u!1 &112367112
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +850,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112367112}
   m_CullTransparentMesh: 1
+--- !u!1 &124522103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124522104}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124522104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124522103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 100, y: 71.28, z: -4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &137259549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,7 +3368,6 @@ MonoBehaviour:
   Playerfab: {fileID: 1340663800}
   virtualCamera: {fileID: 1377255538}
   Ship: {fileID: 662780447}
-  DockLok: {fileID: 1092120312}
 --- !u!1 &662780447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3423,7 +3452,7 @@ Transform:
   m_GameObject: {fileID: 662780447}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 99.2, y: 65.9, z: 0}
+  m_LocalPosition: {x: -57.2, y: -54.7, z: 0}
   m_LocalScale: {x: 0.6986059, y: 0.4763114, z: 1.64}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4375,8 +4404,12 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.033005245, y: 0.6488391}
-  - {x: 0.0715211, y: 0.65192014}
+  - {x: -0.051314194, y: 0.64378023}
+  - {x: 0.005450656, y: 0.6438751}
+  - {x: 0.05712648, y: 0.64481145}
+  - {x: 0.06430248, y: 0.6447436}
+  - {x: 0.057529334, y: 0.52247906}
+  - {x: 0.057224777, y: 0.49899602}
   - {x: 0.069960445, y: 0.49152943}
   - {x: 0.18633102, y: 0.48106545}
   - {x: 0.41127813, y: 0.28229362}
@@ -4402,9 +4435,14 @@ EdgeCollider2D:
   - {x: -0.4163408, y: 0.32316965}
   - {x: -0.37156305, y: 0.40129498}
   - {x: -0.26117036, y: 0.42928532}
-  - {x: -0.13931583, y: 0.4836347}
+  - {x: -0.21253134, y: 0.46292728}
+  - {x: -0.13703598, y: 0.4740863}
   - {x: -0.066712186, y: 0.48426428}
-  - {x: -0.06281291, y: 0.64623237}
+  - {x: -0.053445116, y: 0.49391764}
+  - {x: -0.05431167, y: 0.5111643}
+  - {x: -0.05489908, y: 0.63555926}
+  - {x: -0.05308048, y: 0.64360124}
+  - {x: -0.049413312, y: 0.6448118}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -6470,9 +6508,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.033005245, y: 0.6488391}
-  - {x: 0.0715211, y: 0.65192014}
-  - {x: 0.069960445, y: 0.49152943}
+  - {x: -0.051098, y: 0.6461691}
+  - {x: 0.0643944, y: 0.6461834}
+  - {x: 0.059344757, y: 0.49254182}
   - {x: 0.18633102, y: 0.48106545}
   - {x: 0.41127813, y: 0.28229362}
   - {x: 0.43995464, y: 0.23996156}
@@ -6496,10 +6534,11 @@ EdgeCollider2D:
   - {x: -0.47431114, y: 0.30954677}
   - {x: -0.4163408, y: 0.32316965}
   - {x: -0.37156305, y: 0.40129498}
-  - {x: -0.26117036, y: 0.42928532}
-  - {x: -0.13931583, y: 0.4836347}
-  - {x: -0.066712186, y: 0.48426428}
-  - {x: -0.06281291, y: 0.64623237}
+  - {x: -0.2556322, y: 0.44041213}
+  - {x: -0.21260647, y: 0.46758682}
+  - {x: -0.1410242, y: 0.48097703}
+  - {x: -0.05338423, y: 0.49397415}
+  - {x: -0.052176, y: 0.6444459}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -7116,7 +7155,6 @@ MonoBehaviour:
   Playerfab: {fileID: 1340663800}
   virtualCamera: {fileID: 1377255538}
   Ship: {fileID: 662780447}
-  DockLok: {fileID: 1092120312}
 --- !u!1 &1340864750
 GameObject:
   m_ObjectHideFlags: 0
@@ -7251,7 +7289,6 @@ MonoBehaviour:
   Playerfab: {fileID: 1357497915}
   virtualCamera: {fileID: 1377255538}
   Ship: {fileID: 662780447}
-  DockLok: {fileID: 649328720}
 --- !u!1 &1363170564
 GameObject:
   m_ObjectHideFlags: 0
@@ -7587,7 +7624,7 @@ Transform:
   m_GameObject: {fileID: 1377255536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 99.2, y: 65.9, z: -10}
+  m_LocalPosition: {x: -57.2, y: -54.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7643,7 +7680,6 @@ MonoBehaviour:
   Playerfab: {fileID: 1398389681}
   virtualCamera: {fileID: 1377255538}
   Ship: {fileID: 662780447}
-  DockLok: {fileID: 1918370424}
 --- !u!1 &1399246451
 GameObject:
   m_ObjectHideFlags: 0
@@ -10679,7 +10715,7 @@ Transform:
   m_GameObject: {fileID: 1839406895}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 99.2, y: 65.9, z: 0}
+  m_LocalPosition: {x: -57.2, y: -54.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12407,7 +12443,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003560692, y: 0.536245}
+  m_Offset: {x: 0.003560692, y: 0.5437419}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12418,7 +12454,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.97987217, y: 0.1535351}
+  m_Size: {x: 0.97987217, y: 0.13854137}
   m_EdgeRadius: 0
 --- !u!212 &2087142142
 SpriteRenderer:
@@ -12490,7 +12526,6 @@ MonoBehaviour:
   Playerfab: {fileID: 1357497915}
   virtualCamera: {fileID: 1377255538}
   Ship: {fileID: 662780447}
-  DockLok: {fileID: 649328720}
 --- !u!1 &2087926814
 GameObject:
   m_ObjectHideFlags: 0
@@ -12856,3 +12891,4 @@ SceneRoots:
   - {fileID: 1147129607}
   - {fileID: 1769555270}
   - {fileID: 697329570}
+  - {fileID: 124522104}
