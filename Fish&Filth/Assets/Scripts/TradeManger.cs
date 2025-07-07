@@ -96,6 +96,8 @@ public class TradeManger : MonoBehaviour
             yestrade.SetActive(false);
 
             QuestID3.SetActive(true);
+            await Task.Delay(5000);
+            QuestID3.SetActive(false);
 
         }
         else

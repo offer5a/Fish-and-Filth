@@ -6,7 +6,7 @@ public class Pause : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject PausePanel;
-
+  
     public void PauseButtonPressed()
      {
         PausePanel.SetActive(true);
@@ -17,10 +17,9 @@ public class Pause : MonoBehaviour
     {
         PausePanel.SetActive(false);
         Time.timeScale = 1f;
-    } 
-
-
-
-    // Update is called once per frame
+    }
     
+
+
+
 }

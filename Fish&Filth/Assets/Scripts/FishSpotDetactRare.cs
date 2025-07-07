@@ -8,6 +8,8 @@ public class FishSpotDetactRare : MonoBehaviour
     // Start is called before the first frame update
     //[SerializeField] private GameObject Capsule;
     [SerializeField] private GameObject Minigame1;
+    [SerializeField] private GameObject Minigame2;
+
     
     public bool IsGameRunning;
     public bool IsRareSpot;
@@ -16,6 +18,9 @@ public class FishSpotDetactRare : MonoBehaviour
 
     private async void OnTriggerEnter2D(Collider2D collision)
     {
+
+        int randomChoice = UnityEngine.Random.Range(0, 2);
+
         Inventory inventory = Inventory.Instance;
         if (collision.CompareTag("Ship"))
         {
@@ -28,9 +33,15 @@ public class FishSpotDetactRare : MonoBehaviour
                     break;
                 }
             }
-            if (hasRod)
+            if (hasRod && randomChoice == 0)
             {
                 Minigame1.SetActive(true);
+                IsGameRunning = true;
+                IsRareSpot = true;
+            }
+            else if (hasRod &&  randomChoice == 1)
+            {
+                Minigame2.SetActive(true);
                 IsGameRunning = true;
                 IsRareSpot = true;
             }
@@ -41,16 +52,20 @@ public class FishSpotDetactRare : MonoBehaviour
                 await Task.Delay(3000);
                 norod.SetActive(false);
 
-                    }
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Ship"))
         {
-            Minigame1.SetActive(false);
-            IsGameRunning = false;
-            IsRareSpot=false;
+            
+                Minigame1.SetActive(false);
+                Minigame2.SetActive(false);
+                IsGameRunning = false;
+                IsRareSpot = false;
+            
+            
         }
 
     }
