@@ -24,7 +24,7 @@ public class SecondMinigame : MonoBehaviour
 
     public void fishUp()
     {
-        Fish.velocity = new Vector3(0, 60, 0);
+        Fish.velocity = new Vector3(0, 200, 0);
     }
 
     // Start is called before the first frame update
