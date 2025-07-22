@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 8249477}
   - component: {fileID: 8249476}
   - component: {fileID: 8249475}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,6 +228,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 123512403}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8249476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +290,7 @@ GameObject:
   - component: {fileID: 52598640}
   - component: {fileID: 52598639}
   - component: {fileID: 52598638}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,6 +383,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123512403}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &52598639
 MonoBehaviour:
@@ -543,6 +567,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56205936}
   m_CullTransparentMesh: 1
+--- !u!1 &123512403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 123512404}
+  m_Layer: 5
+  m_Name: Us
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &123512404
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123512403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1400476070}
+  - {fileID: 1211038621}
+  - {fileID: 347133775}
+  m_Father: {fileID: 655360577}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -48, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &147429266
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +617,7 @@ GameObject:
   - component: {fileID: 147429270}
   - component: {fileID: 147429269}
   - component: {fileID: 147429268}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,6 +711,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 123512403}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &147429269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -698,7 +772,7 @@ GameObject:
   - component: {fileID: 169660181}
   - component: {fileID: 169660183}
   - component: {fileID: 169660182}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: 'Book (Page 3) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +851,7 @@ GameObject:
   - component: {fileID: 289830950}
   - component: {fileID: 289830949}
   - component: {fileID: 289830948}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: 'Button  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,17 +1008,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347133774}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 587548794}
-  m_Father: {fileID: 655360577}
+  m_Father: {fileID: 123512404}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 667, y: -311}
+  m_AnchoredPosition: {x: 811, y: -289.62686}
   m_SizeDelta: {x: 182.1952, y: 240.5753}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347133776
@@ -1269,7 +1343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: -152}
+  m_AnchoredPosition: {x: 94, y: -142}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587548795
@@ -1292,7 +1366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Liza
+  m_text: Liza Burykina
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7a3b76306af557d47af10cf51860f950, type: 2}
   m_sharedMaterial: {fileID: 3596752445227826046, guid: 7a3b76306af557d47af10cf51860f950, type: 2}
@@ -1355,7 +1429,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -3.8006153, z: 0, w: 0}
+  m_margin: {x: -167.31915, y: -3.8006153, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1473,9 +1547,7 @@ RectTransform:
   - {fileID: 979390329}
   - {fileID: 1895411785}
   - {fileID: 2093770887}
-  - {fileID: 1400476070}
-  - {fileID: 1211038621}
-  - {fileID: 347133775}
+  - {fileID: 123512404}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1495,7 +1567,7 @@ GameObject:
   - component: {fileID: 695301017}
   - component: {fileID: 695301016}
   - component: {fileID: 695301015}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1588,6 +1660,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 123512403}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &695301016
 MonoBehaviour:
@@ -1734,6 +1818,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 123512403}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &714497775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1784,7 +1880,7 @@ GameObject:
   - component: {fileID: 727877336}
   - component: {fileID: 727877335}
   - component: {fileID: 727877334}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1927,7 +2023,7 @@ GameObject:
   - component: {fileID: 760704650}
   - component: {fileID: 760704652}
   - component: {fileID: 760704651}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: 'Book (Page 5) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2006,7 +2102,7 @@ GameObject:
   - component: {fileID: 803294021}
   - component: {fileID: 803294020}
   - component: {fileID: 803294019}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2100,6 +2196,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 123512403}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &803294020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2150,7 +2258,7 @@ GameObject:
   - component: {fileID: 820514450}
   - component: {fileID: 820514449}
   - component: {fileID: 820514448}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2244,6 +2352,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 123512403}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &820514449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2291,7 +2411,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 979390329}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Settings Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2330,7 +2450,7 @@ GameObject:
   - component: {fileID: 1015859518}
   - component: {fileID: 1015859517}
   - component: {fileID: 1015859516}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2474,7 +2594,7 @@ GameObject:
   - component: {fileID: 1019867659}
   - component: {fileID: 1019867658}
   - component: {fileID: 1019867657}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2617,7 +2737,7 @@ GameObject:
   - component: {fileID: 1094321843}
   - component: {fileID: 1094321845}
   - component: {fileID: 1094321844}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: 'Book (Page 6)  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2717,7 +2837,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.436317, y: -142.9003}
+  m_AnchoredPosition: {x: -39, y: -137}
   m_SizeDelta: {x: 186.8727, y: 53.8006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096889442
@@ -2740,7 +2860,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dan
+  m_text: Dan Kedem
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7a3b76306af557d47af10cf51860f950, type: 2}
   m_sharedMaterial: {fileID: 3596752445227826046, guid: 7a3b76306af557d47af10cf51860f950, type: 2}
@@ -2803,7 +2923,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -135.23305, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2829,7 +2949,7 @@ GameObject:
   - component: {fileID: 1142597396}
   - component: {fileID: 1142597395}
   - component: {fileID: 1142597394}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2972,7 +3092,7 @@ GameObject:
   - component: {fileID: 1192486302}
   - component: {fileID: 1192486304}
   - component: {fileID: 1192486303}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: 'Book (Page 4) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3051,7 +3171,7 @@ GameObject:
   - component: {fileID: 1208952124}
   - component: {fileID: 1208952123}
   - component: {fileID: 1208952122}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3208,17 +3328,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211038620}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2065988316}
-  m_Father: {fileID: 655360577}
+  m_Father: {fileID: 123512404}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 88.33395, y: -313.3731}
+  m_AnchoredPosition: {x: 88.33395, y: -292}
   m_SizeDelta: {x: 198.279, y: 235.8368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211038622
@@ -3399,7 +3519,7 @@ GameObject:
   - component: {fileID: 1229559391}
   - component: {fileID: 1229559390}
   - component: {fileID: 1229559389}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Cancel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3908,7 +4028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409.33395, y: -186.81999}
+  m_AnchoredPosition: {x: 390, y: -181}
   m_SizeDelta: {x: 485.7666, y: 82.8835}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1385452579
@@ -4033,17 +4153,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400476069}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1096889441}
-  m_Father: {fileID: 655360577}
+  m_Father: {fileID: 123512404}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 363.18002, y: -313.37314}
+  m_AnchoredPosition: {x: 429, y: -292}
   m_SizeDelta: {x: 238.2024, y: 235.8368}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1400476071
@@ -4362,7 +4482,7 @@ GameObject:
   - component: {fileID: 1505504057}
   - component: {fileID: 1505504059}
   - component: {fileID: 1505504058}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: 'Book (Page 2) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4441,7 +4561,7 @@ GameObject:
   - component: {fileID: 1547878764}
   - component: {fileID: 1547878763}
   - component: {fileID: 1547878762}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4653,7 +4773,7 @@ GameObject:
   - component: {fileID: 1620233441}
   - component: {fileID: 1620233440}
   - component: {fileID: 1620233439}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: 'Button '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4797,7 +4917,7 @@ GameObject:
   - component: {fileID: 1793670186}
   - component: {fileID: 1793670185}
   - component: {fileID: 1793670184}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4940,7 +5060,7 @@ GameObject:
   - component: {fileID: 1863510122}
   - component: {fileID: 1863510121}
   - component: {fileID: 1863510120}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Book (Page 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5057,7 +5177,7 @@ GameObject:
   - component: {fileID: 1911167878}
   - component: {fileID: 1911167880}
   - component: {fileID: 1911167879}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5290,7 +5410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.9999826, y: -144}
+  m_AnchoredPosition: {x: -54, y: -134}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065988317
@@ -5313,7 +5433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Ofer
+  m_text: 'Ofer Bauch
 
 '
   m_isRightToLeft: 0
@@ -5378,7 +5498,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -89.67999, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5426,7 +5546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -802.75916, y: -423}
+  m_AnchoredPosition: {x: -662, y: -411}
   m_SizeDelta: {x: 115.2296, y: 116.7091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2093770888
@@ -5476,7 +5596,7 @@ GameObject:
   - component: {fileID: 2102109426}
   - component: {fileID: 2102109425}
   - component: {fileID: 2102109424}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: 'Button  '
   m_TagString: Untagged
   m_Icon: {fileID: 0}

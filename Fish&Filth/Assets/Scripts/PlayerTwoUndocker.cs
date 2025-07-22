@@ -26,7 +26,7 @@ public class PlayerTwoUndocker : MonoBehaviour
     {
         
 
-        Clone1 = Instantiate(Playerfab, new Vector3(100, 72, -4), Quaternion.identity);
+        Clone1 = Instantiate(Playerfab, new Vector3(89, 89, -4), Quaternion.identity);
         return Clone1;
     }
 
@@ -74,7 +74,7 @@ public class PlayerTwoUndocker : MonoBehaviour
 
         
         //GameObject clone = Instantiate(Playerfab);
-        Clone1 = Instantiate(Playerfab, new Vector3(100, 72, -4), Quaternion.identity);
+        Clone1 = Instantiate(Playerfab, new Vector3(89, 89, -4), Quaternion.identity);
 
 
         //GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
