@@ -14,7 +14,8 @@ public class FishSpotDetactRare : MonoBehaviour
     public bool IsGameRunning;
     public bool IsRareSpot;
     public GameObject norod;
-  
+
+    public GameObject drunkensailor;
 
     private async void OnTriggerEnter2D(Collider2D collision)
     {
@@ -38,12 +39,16 @@ public class FishSpotDetactRare : MonoBehaviour
                 Minigame1.SetActive(true);
                 IsGameRunning = true;
                 IsRareSpot = true;
+
+                drunkensailor.SetActive(true);
             }
             else if (hasRod &&  randomChoice == 1)
             {
                 Minigame2.SetActive(true);
                 IsGameRunning = true;
                 IsRareSpot = true;
+
+                drunkensailor.SetActive(true);
             }
             else 
             {
@@ -64,8 +69,8 @@ public class FishSpotDetactRare : MonoBehaviour
                 Minigame2.SetActive(false);
                 IsGameRunning = false;
                 IsRareSpot = false;
-            
-            
+
+            drunkensailor.SetActive(false);
         }
 
     }

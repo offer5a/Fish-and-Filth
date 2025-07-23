@@ -21,6 +21,12 @@ public class MinigameManager : MonoBehaviour
     [SerializeField] GameObject RareSpot;
     [SerializeField] private InhertitanceTest fish;
 
+    public AudioSource drunkensailor;
+    //bool isplaying;
+    
+
+
+
     public string Simplefish;
 
     
@@ -46,12 +52,29 @@ public class MinigameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+
         Invoke("GoalCheck", 2f);
     }
 
     // Update is called once per frame
     async void Update()
     {
+
+        //if (IsGameRunning && !isplaying)
+        //{
+        //    drunkensailor.Play();
+        //    isplaying = true;
+        //    Debug.Log("played");
+        //}
+        //else
+        //{
+        //    drunkensailor.Stop();
+        //    isplaying = false;
+        //}
+
+
+
         Inventory inventory = Inventory.Instance;
         bool hasRod = false;
         foreach (Item item in inventory.items)
@@ -223,6 +246,7 @@ public class MinigameManager : MonoBehaviour
         }
     }
 
+    
 }
 
 

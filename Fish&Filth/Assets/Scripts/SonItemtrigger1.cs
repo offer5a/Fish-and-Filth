@@ -12,6 +12,8 @@ public class SonItemtrigger : MonoBehaviour
     public GameObject LoreItem;
     public GameObject QuestID1;
     public GameObject QuestID2;
+
+    public AudioSource winsound;
     void Start()
     {
         
@@ -32,6 +34,8 @@ public class SonItemtrigger : MonoBehaviour
         {
             Item SonItem = new Item("SonItem");
             bool added = Inventory.Instance.AddItem(SonItem);
+
+            winsound.Play();
 
             lore.SetActive(true);
             await Task.Delay(3000);

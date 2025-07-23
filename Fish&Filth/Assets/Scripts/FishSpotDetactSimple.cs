@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject Minigame1;
     [SerializeField] private GameObject Minigame2;
 
+    public GameObject drunkensailor;
+
     public bool IsGameRunning;
     
 
@@ -38,12 +40,15 @@ public class GameManager : MonoBehaviour
             {
                 Minigame1.SetActive(true);
                 IsGameRunning = true;
+
+                drunkensailor.SetActive(true);
             }
             else if (randomChoice == 1) 
             {
                 Minigame2.SetActive(true);
                 IsGameRunning = true;
 
+                drunkensailor.SetActive(true);
             }
             
         }
@@ -55,6 +60,9 @@ public class GameManager : MonoBehaviour
         {
             Minigame1.SetActive(false);
             Minigame2.SetActive(false);
+
+            drunkensailor.SetActive(false);
+
             IsGameRunning = false;
         }
 

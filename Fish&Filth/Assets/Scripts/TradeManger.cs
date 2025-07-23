@@ -59,7 +59,7 @@ public class TradeManger : MonoBehaviour
     public GameObject QuestID2;
     public GameObject QuestID3;
 
-
+    public AudioSource winsound;
     public async void AttemptTrade()
     {
         Inventory inventory = Inventory.Instance;
@@ -90,6 +90,9 @@ public class TradeManger : MonoBehaviour
             // Add the reward item
             
             inventory.AddItem(trade.rewardItem);
+
+            winsound.Play();
+
             //Debug.Log($"Trade successful! Gave {trade.requiredAmount} {trade.requiredItemName}(s) for a {trade.rewardItem.itemName}.");
             yestrade.SetActive(true);
             await Task.Delay(5000);
